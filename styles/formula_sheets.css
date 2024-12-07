@@ -60,3 +60,11 @@ table {
     border: none;
     break-after: page;
 }
+
+/* This hack allows me to make markdown code span all columns */
+blockquote:has(span.nobg),
+blockquote:has(> pre):not(:has(> *:not(pre))) {
+    column-span: all;
+    border: none;
+    background: transparent;
+}
