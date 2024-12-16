@@ -55,11 +55,22 @@ table {
     break-before: avoid;
     break-inside: avoid
 }
+
+.colbreak {
+    column-span: all;
+    margin: 1px 0;
+    padding: 0;
+    border: none;
+}
+
 .pagebreak {
     column-span: all;
-    border: none;
     break-after: page;
+    margin: 0;
+    padding: 0;
+    border: none;
 }
+
 
 /* This hack allows me to make markdown code span all columns */
 blockquote:has(span.nobg),
